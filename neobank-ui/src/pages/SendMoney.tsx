@@ -22,7 +22,7 @@ export default function SendMoney() {
   const [amount, setAmount] = useState('')
   const [balance, setBalance] = useState(() => {
     const saved = localStorage.getItem('neobank_balance')
-    return saved ? parseFloat(saved) : 0.80
+    return saved ? parseFloat(saved) : 0
   })
   const [status, setStatus] = useState('')
   const [error, setError] = useState('')

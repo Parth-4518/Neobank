@@ -24,7 +24,7 @@ interface Transaction {
 export default function Profile() {
   const [kycData, setKycData] = useState<KYCData | null>(null)
   const [transactions, setTransactions] = useState<Transaction[]>([])
-  const [balance, setBalance] = useState(0.80)
+  const [balance, setBalance] = useState(0)
 
   const walletAddress = '0x519f8179A81C42468bBeAf559e70dd3eF94D1644'
 

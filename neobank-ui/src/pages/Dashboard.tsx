@@ -14,7 +14,7 @@ interface Transaction {
 
 export default function Dashboard() {
   const user = JSON.parse(localStorage.getItem('user') || '{}')
-  const balance = parseFloat(localStorage.getItem('neobank_balance') || '0.80')
+  const balance = parseFloat(localStorage.getItem('neobank_balance') || '0')
   const [recentTransactions, setRecentTransactions] = useState<Transaction[]>([])
 
   useEffect(() => {

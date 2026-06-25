@@ -48,7 +48,7 @@ export default function KYC() {
     const totalTransactions = transactions.length
     const totalSent = transactions.filter((t: any) => t.type === 'sent').reduce((sum: number, t: any) => sum + t.amount, 0)
     const totalReceived = transactions.filter((t: any) => t.type === 'received').reduce((sum: number, t: any) => sum + t.amount, 0)
-    const balance = parseFloat(localStorage.getItem('neobank_balance') || '0.80')
+    const balance = parseFloat(localStorage.getItem('neobank_balance') || '0')
     
     return (
       <PhoneFrame>

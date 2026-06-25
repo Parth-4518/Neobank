@@ -5,7 +5,7 @@ import { FaHome, FaWallet, FaPaperPlane, FaIdCard, FaHistory, FaArrowLeft, FaQrc
 import { QRCodeSVG } from 'qrcode.react'
 
 export default function Wallet() {
-  const [balance, setBalance] = useState(0.80)
+  const [balance, setBalance] = useState(0)
   const [addAmount, setAddAmount] = useState('')
   const [showAddMoney, setShowAddMoney] = useState(false)
   const [status, setStatus] = useState('')
